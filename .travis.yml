@@ -5,11 +5,11 @@ before_install:
   -s`-`uname -m` > docker-compose
 - chmod +x docker-compose
 - sudo mv docker-compose /usr/local/bin
-- docker login -u "$DOCKER_USERNAME" -p "$DOCKER_PASSWORD"
+- docker login -u "anddopphoopha" -p "$DOCKER_PASSWORD"
 install:
 - mvn install -Dmaven.javadoc.skip=true -B -V
 - ls -l
-- docker build --build-arg JAR_FILE=/target/backend.jar -t $DOCKER_USERNAME/se234-lab10-backend
+- docker build --build-arg JAR_FILE=/target/backend.jar -t anddopphoopha/se234-lab10-backend
   .
 - docker push anddopphoopha/se234-lab10-backend
 - docker pull anddopphoopha/se234-lab10-client
