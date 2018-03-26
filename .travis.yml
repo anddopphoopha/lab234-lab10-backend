@@ -12,8 +12,8 @@ install:
 - ls -l
 - docker build --build-arg JAR_FILE=/target/backend.jar -t anddopphoopha/se234-lab10-backend
   .
-- docker push dto80/se234-lab10-backend
-- docker pull dto80/se234-lab10-client
+- docker push anddopphoopha/se234-lab10-backend
+- docker pull anddopphoopha/se234-lab10-client
 script:
 - docker-compose -H "$DOCKER_HOST" up -d
 cashe:
