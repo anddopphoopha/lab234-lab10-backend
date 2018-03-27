@@ -10,11 +10,11 @@ public class GradeServiceImpl implements GradeService {
         if(score >= 80){
 return "A";
         } else if(score >= 75){
-return "B"
+return "B";
         } else if(score >= 60){
-return "C"
+return "C";
         } else if(score >= 33){
-return "D"
+return "D";
         } else
             return "F";
     }
