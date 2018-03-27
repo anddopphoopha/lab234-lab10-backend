@@ -15,7 +15,7 @@ install:
 - docker push anddopphoopha/se234-lab10-backend
 - docker pull anddopphoopha/se234-lab10-client
 script:
-- docker-compose -H "tcp://http://35.165.208.57:8081" up -d
+- docker-compose -H "$DOCKER_HOST" up -d
 cashe:
   directories:
   - "$HOME/.m2"
