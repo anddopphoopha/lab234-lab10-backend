@@ -16,7 +16,7 @@ install:
 - docker pull anddopphoopha/se234-lab10-client
 script:
 - docker-compose -H "$DOCKER_HOST" up -d
-cashe:
+cache:
   directories:
   - "$HOME/.m2"
 env:
